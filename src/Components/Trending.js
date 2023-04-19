@@ -78,7 +78,12 @@ const TrendingStyled = styled.article`
     /* Style your items */
     .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
         margin-bottom: 15px;
+        
     }
+    .my-masonry-grid_column > div > div {
+        height: 350px;
+    }
+    
 `;
 
 export default Trending
