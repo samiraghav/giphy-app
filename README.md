@@ -4,29 +4,42 @@ This is a simple web application that allows you to search for and view GIFs fro
 ## Getting Started
 To run this app on your local machine, follow these steps:
 
-## Clone the repository to your local machine
+Clone the repository to your local machine
+
 Open a terminal window and navigate to the project directory
+
 Run npm install to install the necessary dependencies
+
 Create a .env file in the root directory of the project and add your Giphy API key as follows: REACT_APP_API_KEY=your_api_key
+
 Run npm start to start the development server
+
 Open http://localhost:3000 in your web browser to view the app
 
 ## Features
 The app includes the following features:
 
 Search for GIFs using keywords
+
 Trending GIFs on the home page
+
 Random GIF generator
+
 Light/dark mode toggle
+
 Responsive design using CSS Grid and media queries
 
 ## Dependencies
 The app uses the following dependencies:
 
 Axios
+
 React
+
 React DOM
+
 React Masonry CSS
+
 Styled Components
 
 ## API
