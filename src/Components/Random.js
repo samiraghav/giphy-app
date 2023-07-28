@@ -6,7 +6,7 @@ import GiffItem from './GiffItem';
 import Loader from './Loader';
 
 function Random() {
-    const {random, loading} = useGlobal()
+    const { random, loading } = useGlobal()
     const theme = useTheme()
     return (
         <RandomStyled theme={theme}>
@@ -19,6 +19,12 @@ const RandomStyled = styled.article`
     padding: 2rem;
     background-color: ${(props) => props.theme.colorBg2};
     border-radius: 1rem;
-    width: 50%;
+    width: 100%; 
+    max-width: 50rem; 
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 1rem; 
+    }
 `;
 export default Random
