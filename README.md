@@ -14,7 +14,7 @@ This is a simple web application that allows you to search for and view GIFs fro
 
 5. Create a .env file in the root directory of the project and add your Giphy API key as follows:  
 
-`REACT_APP_API_KEY=your_api_key`
+    `REACT_APP_API_KEY=your_api_key`
 
 6. Run npm start to start the development server
 
