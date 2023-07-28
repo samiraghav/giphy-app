@@ -122,42 +122,42 @@ const ModalStyled = styled.div`
     }
     @media (max-width: 768px) {
         .modal {
-            min-width: 90%; /* Adjust the modal width for mobile */
-            top: 35%;
+            min-width: 90%; 
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
         }
 
         .modal-content {
-            padding: 1rem; /* Reduce padding for mobile */
+            padding: 1rem; 
             display: flex;
-            flex-direction: column; /* Stack elements in a single column */
-            align-items: center; /* Center elements in the column */
+            flex-direction: column; 
+            align-items: center;
 
             img {
-                max-width: 40%; /* Adjust image size for mobile */
+                max-width: 40%; 
             }
 
             .text-content {
                 h3 {
-                    font-size: 1.4rem; /* Reduce font size for mobile */
+                    font-size: 1.4rem; 
                 }
 
                 .share-items {
                     display: flex;
-                    flex-direction: column; /* Stack share buttons in a single column */
+                    flex-direction: column;
 
                     .share-item {
                         margin-bottom: 1rem;
-                        font-size: 1.2rem; /* Reduce font size for mobile */
+                        font-size: 1.2rem; 
                         font-weight: 600;
                         cursor: pointer;
                         transition: all .3s ease-in-out;
                         color: ${(props) => props.theme.colorBlue2};
                         &:hover {
-                            transform: none; /* Remove hover transform for mobile */
+                            transform: none;
                         }
 
-                        /* Hide share buttons on mobile */
                         &.embed {
                             display: none;
                         }

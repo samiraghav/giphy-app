@@ -11,7 +11,7 @@ const trend = <i className="fa-solid fa-arrow-trend-up"></i>
 
 function Trending() {
 
-    const {trending, loading} = useGlobal()
+    const { trending, loading } = useGlobal()
     const theme = useTheme()
 
     console.log(trending)
@@ -32,7 +32,7 @@ function Trending() {
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
             >
-                
+
                 {
                     trending.map((giff) => {
                         return <GiffItem key={giff.id} {...giff} giffItem={giff} />
@@ -65,13 +65,13 @@ const TrendingStyled = styled.article`
     }
     .my-masonry-grid {
         display: flex;
-        justify-content: center; /* Center the Masonry layout */
-        margin-left: -20px; /* gutter size offset */
+        justify-content: center; 
+        margin-left: -20px; 
         width: auto;
       }
     
       .my-masonry-grid_column {
-        padding-left: 20px; /* gutter size */
+        padding-left: 20px;
         background-clip: padding-box;
       }
     
@@ -80,22 +80,19 @@ const TrendingStyled = styled.article`
       } 
     }
     .my-masonry-grid_column > div > div {
-        height: 350px; /* Adjust the height based on your design requirements */
-      }
-    
-      /* Mobile responsive styles */
-      @media screen and (max-width: 768px) {
-        .my-masonry-grid {
-          justify-content: flex-start; /* Revert to default justify-content for smaller screens */
-        }
-    
-        .my-masonry-grid_column {
-          padding-left: 10px; /* Adjust the gutter size for smaller screens */
-        }
-        /* Reset height for smaller screens */
-    .my-masonry-grid_column > div > div {
-      height: auto;
+        height: 350px; 
     }
+    
+    @media screen and (max-width: 768px) {
+        .my-masonry-grid {
+          justify-content: flex-start; 
+        }
+        .my-masonry-grid_column {
+          padding-left: 10px; 
+        }
+        .my-masonry-grid_column > div > div {
+          height: auto;
+        }
   }
     
 `;

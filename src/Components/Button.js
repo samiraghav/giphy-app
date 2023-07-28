@@ -17,7 +17,6 @@ function Button({ name, icon, onClick }) {
 }
 
 const ButtonStyled = styled.button`
-  /* Common styles for both mobile and desktop */
   background-color: transparent;
   color: ${(props) => props.theme.colorWhite};
   font-weight: 600;
@@ -31,22 +30,20 @@ const ButtonStyled = styled.button`
   border: none;
   transition: all 0.3s ease-in-out;
 
-  /* Mobile styles */
   @media (max-width: 768px) {
     span:first-child {
-      padding: 0.7rem 1.5rem; /* Adjust the padding for mobile */
-      border-radius: 0.8rem; /* Adjust the border-radius for mobile */
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.8rem; 
     }
 
     span:last-child {
-      left: -0.2rem; /* Adjust the position for mobile */
-      width: calc(100% + 0.4rem); /* Adjust the width for mobile */
-      height: calc(100% + 0.4rem); /* Adjust the height for mobile */
-      border-radius: 0.8rem; /* Adjust the border-radius for mobile */
+      left: -0.2rem;
+      width: calc(100% + 0.4rem); 
+      height: calc(100% + 0.4rem); 
+      border-radius: 0.8rem;
     }
   }
 
-  /* Desktop styles */
   span:first-child {
     position: relative;
     z-index: 5;

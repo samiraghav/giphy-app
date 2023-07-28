@@ -82,14 +82,13 @@ const GiffStyled = styled.div`
     }
   }
 
-  /* Mobile responsive styles */
   @media (max-width: 768px) {
     .gif {
       .love {
         top: 0.5rem;
         right: 0.5rem;
         i {
-          font-size: 1.5rem; /* Adjust the icon size for smaller screens */
+          font-size: 1.5rem; 
         }
       }
     }

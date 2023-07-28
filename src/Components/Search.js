@@ -62,23 +62,22 @@ const SearchStyled = styled.article`
     }
     .my-masonry-grid {
         display: flex;
-        justify-content: center; /* Center the Masonry layout */
-        margin-left: -20px; /* gutter size offset */
+        justify-content: center; 
+        margin-left: -20px;
         width: auto;
       }
     
       .my-masonry-grid_column {
-        padding-left: 20px; /* gutter size */
+        padding-left: 20px; 
         background-clip: padding-box;
       }
 
-    /* Style your items */
-    .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    .my-masonry-grid_column > 
         margin-bottom: 15px;
     }
     @media screen and (max-width: 768px) {
         .my-masonry-grid {
-          justify-content: flex-start; /* Revert to default justify-content for smaller screens */
+          justify-content: flex-start; 
         }
       }
 `;

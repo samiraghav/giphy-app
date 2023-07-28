@@ -59,17 +59,17 @@ const HeaderStyled = styled.header`
         padding: 2rem 2rem;
         .logo {
           svg {
-            width: 8rem; /* Adjust the logo size for smaller screens */
+            width: 8rem;
           }
         }
         form {
           .input-control {
             input {
-              padding: 1rem 1.5rem; /* Adjust input padding for smaller screens */
+              padding: 1rem 1.5rem; 
             }
             .submit-btn {
               i {
-                font-size: 1.5rem; /* Adjust icon size for smaller screens */
+                font-size: 1.5rem; 
               }
             }
           }
