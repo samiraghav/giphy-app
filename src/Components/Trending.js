@@ -64,25 +64,39 @@ const TrendingStyled = styled.article`
         }
     }
     .my-masonry-grid {
-        display: -webkit-box; /* Not needed if autoprefixing */
-        display: -ms-flexbox; /* Not needed if autoprefixing */
         display: flex;
+        justify-content: center; /* Center the Masonry layout */
         margin-left: -20px; /* gutter size offset */
         width: auto;
-    }
-    .my-masonry-grid_column {
+      }
+    
+      .my-masonry-grid_column {
         padding-left: 20px; /* gutter size */
         background-clip: padding-box;
-    }
-
-    /* Style your items */
-    .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+      }
+    
+      .my-masonry-grid_column > div {
         margin-bottom: 15px;
-        
+      } 
     }
     .my-masonry-grid_column > div > div {
-        height: 350px;
+        height: 350px; /* Adjust the height based on your design requirements */
+      }
+    
+      /* Mobile responsive styles */
+      @media screen and (max-width: 768px) {
+        .my-masonry-grid {
+          justify-content: flex-start; /* Revert to default justify-content for smaller screens */
+        }
+    
+        .my-masonry-grid_column {
+          padding-left: 10px; /* Adjust the gutter size for smaller screens */
+        }
+        /* Reset height for smaller screens */
+    .my-masonry-grid_column > div > div {
+      height: auto;
     }
+  }
     
 `;
 

@@ -16,10 +16,11 @@ function Random() {
 }
 
 const RandomStyled = styled.article`
-    padding: 2rem;
-    background-color: ${(props) => props.theme.colorBg2};
-    border-radius: 1rem;
-    width: 50%;
-    margin: 0 auto;
+padding: 2rem;
+background-color: ${(props) => props.theme.colorBg2};
+border-radius: 1rem;
+width: 100%; /* Set width to 100% to occupy the available space */
+max-width: 500px; /* Set a maximum width for larger screens */
+margin: 0 auto;
 `;
 export default Random

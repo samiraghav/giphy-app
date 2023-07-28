@@ -76,11 +76,21 @@ const AppStyled = styled.div`
     margin-top: 4rem;
     margin-bottom: 2rem;
   }
+  @media screen and (max-width: 768px) {
+    .fetch-btns{
+      flex-direction: column; 
+      gap: 1.5rem; 
+      background: none;
+    }
+  }
 
-  main{
+  main {
     padding: 2rem 8rem;
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 1300px) {
       padding: 2rem 4rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 2rem;
     }
   }
 `;

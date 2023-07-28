@@ -77,6 +77,15 @@ const FavouritesStyled = styled.article`
     .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
         margin-bottom: 15px;
     }
+    @media screen and (max-width: 768px) {
+        .my-masonry-grid {
+            justify-content: flex-start; /* Revert to default justify-content for smaller screens */
+        }
+
+        .my-masonry-grid_column {
+            padding-left: 10px; /* Adjust the gutter size for smaller screens */
+        }
+    }
 `;
 
 export default Favourites

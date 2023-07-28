@@ -55,6 +55,26 @@ const HeaderStyled = styled.header`
     @media screen and (max-width: 1300px){
         padding: 2rem 10rem;
     }
+    @media screen and (max-width: 768px) {
+        padding: 2rem 2rem;
+        .logo {
+          svg {
+            width: 8rem; /* Adjust the logo size for smaller screens */
+          }
+        }
+        form {
+          .input-control {
+            input {
+              padding: 1rem 1.5rem; /* Adjust input padding for smaller screens */
+            }
+            .submit-btn {
+              i {
+                font-size: 1.5rem; /* Adjust icon size for smaller screens */
+              }
+            }
+          }
+        }
+      }    
     .logo{
         display: flex;
         align-items: center;

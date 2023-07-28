@@ -120,6 +120,56 @@ const ModalStyled = styled.div`
         background-color: rgba(0,0,0,.6);
         z-index: 12;
     }
+    @media (max-width: 768px) {
+        .modal {
+            min-width: 90%; /* Adjust the modal width for mobile */
+            top: 35%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal-content {
+            padding: 1rem; /* Reduce padding for mobile */
+            display: flex;
+            flex-direction: column; /* Stack elements in a single column */
+            align-items: center; /* Center elements in the column */
+
+            img {
+                max-width: 40%; /* Adjust image size for mobile */
+            }
+
+            .text-content {
+                h3 {
+                    font-size: 1.4rem; /* Reduce font size for mobile */
+                }
+
+                .share-items {
+                    display: flex;
+                    flex-direction: column; /* Stack share buttons in a single column */
+
+                    .share-item {
+                        margin-bottom: 1rem;
+                        font-size: 1.2rem; /* Reduce font size for mobile */
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+                        color: ${(props) => props.theme.colorBlue2};
+                        &:hover {
+                            transform: none; /* Remove hover transform for mobile */
+                        }
+
+                        /* Hide share buttons on mobile */
+                        &.embed {
+                            display: none;
+                        }
+
+                        &.giffy {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 `;
 
 export default Modal
