@@ -1,49 +1,56 @@
 ## Giphy App
+
 This is a simple web application that allows you to search for and view GIFs from the Giphy API. The app is built using React and styled-components for the front-end, and uses Axios to fetch data from the Giphy API.
 
 ## Getting Started
-To run this app on your local machine, follow these steps:
 
-Clone the repository to your local machine
+1. To run this app on your local machine, follow these steps:
 
-Open a terminal window and navigate to the project directory
+2. Clone the repository to your local machine
 
-Run npm install to install the necessary dependencies
+3. Open a terminal window and navigate to the project directory
 
-Create a .env file in the root directory of the project and add your Giphy API key as follows: REACT_APP_API_KEY=your_api_key
+4. Run npm install to install the necessary dependencies
 
-Run npm start to start the development server
+5. Create a .env file in the root directory of the project and add your Giphy API key as follows:  
 
-Open http://localhost:3000 in your web browser to view the app
+`REACT_APP_API_KEY=your_api_key`
+
+6. Run npm start to start the development server
+
+7. Open http://localhost:3000 in your web browser to view the app
 
 ## Features
-The app includes the following features:
 
-Search for GIFs using keywords
+1. The app includes the following features:
 
-Trending GIFs on the home page
+2. Search for GIFs using keywords
 
-Random GIF generator
+3. Trending GIFs on the home page
 
-Light/dark mode toggle
+4. Random GIF generator
 
-Responsive design using CSS Grid and media queries
+5. Light/dark mode toggle
+
+6. Responsive design using CSS Grid and media queries
 
 ## Dependencies
 The app uses the following dependencies:
 
-Axios
+1. Axios
 
-React
+2. React
 
-React DOM
+3. React DOM
 
-React Masonry CSS
+4. React Masonry CSS
 
-Styled Components
+5. Styled Components
 
 ## API
+
 This app uses the Giphy API to fetch GIF data. To use this app, you will need to obtain an API key from Giphy and add it to the .env file as described above.
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
